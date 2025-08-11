@@ -1,18 +1,25 @@
 #Variaveis
-nome =(input("Digite o seu nome"))
-peso =float(input("Digite seu peso"))
-altura =float(input("Digite sua altura"))
+print("--------------------------------------------------------------------------------")
+print("CALCULO DE IMC")
+print("--------------------------------------------------------------------------------")
+nome =(input("Digite o seu nome: "))
+print("--------------------------------------------------------------------------------")
+peso =float(input("Digite seu peso: "))
+print("--------------------------------------------------------------------------------")
+altura =float(input("Digite sua altura: "))
+print("--------------------------------------------------------------------------------")
 #Conta do IMC
 Imc= peso/(altura*altura)
 #mensagens
+if Imc >= 18.6:
+    print("Peso normal😁😁😁")
+    print("--------------------------------------------------------------------------------")
+elif Imc >= 25:
+   print("Sobrepeso!😞😞😞")
+   print("--------------------------------------------------------------------------------")
+else:
+  print("Baixo peso!!💀💀💀")
+  print("--------------------------------------------------------------------------------")
 
-if Imc<24.9:
-   print("Peso normal😁😁😁")
-
-elif Imc<25:
-   print("Sobre peso!")
-
-else Imc<18.5:
-   print("Baixo peso!!")
-  
 print(f"{nome},Seu IMC é {Imc:.4}")
+print("--------------------------------------------------------------------------------")
